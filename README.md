@@ -1,6 +1,6 @@
 # resume
 
-## 自我探索之旅
+## 規劃自我探索之旅
 https://amberwu1234.github.io/resume/
 
 ## 備註
