@@ -132,7 +132,7 @@ $(function(){
                 dotIdx = 0;
             }
             move()
-        },1500);
+        },3000);
     }
 
     $('.bannerMain .container').hover(function(){
