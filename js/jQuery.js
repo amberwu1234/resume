@@ -133,11 +133,6 @@ $(function(){
         },3500);
     }
 
-    $('.bannerMain .container').hover(function(){
-        clearInterval(timeAuto);
-    },function(){
-        timeGo();
-    })
 
 
 
