@@ -79,16 +79,14 @@ $(function(){
 
     let imageSum = imagesArray.length;
 
-    let dotSum = ''; /*圓點總數*/
-    let dotIdx = 0; /*圓點的索引值*/
+    /*圓點的索引值*/
+    let dotIdx = 0; 
 
-    for(let i = 0; i < imageSum; i++){
-        dotSum = dotSum + '<li></li>';
-    }
-    $('.dot').append(dotSum);
-
-  
-    $('.dot li').eq(0).addClass('active') /*圓點起始值*/
+    // 使圓點數量與輪播總數相同
+    $('.dot').append('<li></li>'.repeat(imageSum));
+    
+    /*圓點起始值*/
+    $('.dot li').eq(0).addClass('active') 
 
 
     $('.dot li').click(function(){
@@ -132,7 +130,7 @@ $(function(){
                 dotIdx = 0;
             }
             move()
-        },3000);
+        },3500);
     }
 
     $('.bannerMain .container').hover(function(){
@@ -140,6 +138,11 @@ $(function(){
     },function(){
         timeGo();
     })
+
+
+
+
+    
 
 });
 
