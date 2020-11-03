@@ -1,5 +1,9 @@
-
 $(function(){
+    
+    window.onload = function(){ 
+        $('.loading').fadeOut(1500);
+    }
+
   /*漢堡選單互動區------------------------------*/
     /*選單出現------------*/
     $('.control').click(function(){
@@ -86,7 +90,9 @@ $(function(){
     $('.dot').append('<li></li>'.repeat(imageSum));
     
     /*圓點起始值*/
-    $('.dot li').eq(0).addClass('active') 
+    $('.dot li').eq(0).addClass('active') ;
+
+    console.log(dotIdx)
 
 
     $('.dot li').click(function(){
